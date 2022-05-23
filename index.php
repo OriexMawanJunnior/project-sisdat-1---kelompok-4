@@ -107,13 +107,13 @@ if (isset($_POST['simpan'])) { //untuk create
                 <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="listJadwal.php">Jadwal Pertandingan</a>
+                    <a class="nav-link active" aria-current="page" href="list_jadwal.php">Jadwal Pertandingan</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="listClub.php">Club</a>
+                    <a class="nav-link" href="list_club.php">Club</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="listPlayer.php">Pemain</a>
+                    <a class="nav-link" href="list_player.php">Pemain</a>
                     </li>
                 </ul>
                 </div>
