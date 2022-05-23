@@ -36,22 +36,22 @@ $phone      = "";
 
 <body>
     <div class="mx-auto">
-        <nav class="navbar navbar-expand-lg bg-warning">
+    <nav class="navbar navbar-expand-lg bg-warning">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.php">CLUB</a>
+                <a class="navbar-brand" href="index.php">LIGA SEPAK BOLA</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="listJadwal.php">Jadwal Pertandingan</a>
+                    <a class="nav-link active" aria-current="page" href="list_jadwal.php">Jadwal Pertandingan</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="listClub.php">Club</a>
+                    <a class="nav-link" href="list_club.php">Club</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="listPlayer.php">Pemain</a>
+                    <a class="nav-link" href="list_player.php">Pemain</a>
                     </li>
                 </ul>
                 </div>
@@ -60,7 +60,7 @@ $phone      = "";
         <!-- untuk mengeluarkan data -->
         <div class="card">
             <div class="card-header text-white bg-secondary">
-                Liga Sepak Bola
+                Club
             </div>
             <div class="card-body">
                 <table class="table">
