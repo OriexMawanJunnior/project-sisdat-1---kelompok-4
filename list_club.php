@@ -70,7 +70,6 @@ $phone      = "";
                             <th scope="col">Club</th>
                             <th scope="col">Alamat</th>
                             <th scope="col">No. Telpon</th>
-                            <th scope="col">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>

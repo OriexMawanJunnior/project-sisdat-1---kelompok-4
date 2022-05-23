@@ -140,35 +140,43 @@ if (isset($_POST['simpan'])) { //untuk create
                 }
                 ?>
                 <form action="" method="POST">
-                    <input type="hidden" name='fk' value="<?php echo $fk?>">
-                    <?php
-                    $sql3   = "select * from club where club.league_id='$fk'order by club_id desc";
-                    $q3     = mysqli_query($koneksi, $sql3);
-                    while ($r3 = mysqli_fetch_array($q3)) {
-                        $ch         = $r3['club_name'];
-                        $ca         = $r3['club_name'];
-                    ?>    
-                            <div class="mb-3 row">
-                                <label for="club_home" class="col-sm-2 col-form-label">Club Home</label>
-                                <div class="col-sm-10">
-                                    <select class="form-control" name="club_home" id="club_home">
-                                        <option value="">- Pilih club -</option>
-                                        <option value="<?php echo $ch ?>" <?php if ($ch == $ch) echo "selected" ?>><?php echo $ch ?></option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="mb-3 row">
-                                <label for="club_away" class="col-sm-2 col-form-label">Club Away</label>
-                                <div class="col-sm-10">
-                                    <select class="form-control" name="club_away" id="club_away">
-                                        <option value="">- Pilih club -</option>
-                                        <option value="<?php echo $ca ?>" <?php if ($ca == $ca) echo "selected" ?>><?php echo $ca ?></option>
-                                    </select>
-                                </div>
-                            </div>
-                    <?php
-                    }
-                    ?>
+                    <input type="hidden" name='fk' value="<?php echo $fk?>">   
+                    <div class="mb-3 row">
+                        <label for="club_home" class="col-sm-2 col-form-label">Club Home</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" name="club_home" id="club_home">
+                                <option value="">- Pilih club -</option>
+                                <?php
+                                $sql3   = "select * from club where club.league_id='$fk'order by club_id desc";
+                                $q3     = mysqli_query($koneksi, $sql3);
+                                while ($r3 = mysqli_fetch_array($q3)) {
+                                    $ch         = $r3['club_name'];
+                                ?>
+                                <option value="<?php echo $ch ?>" <?php if ($ch == $ch) echo "selected" ?>><?php echo $ch ?></option>
+                                <?php
+                                }
+                                ?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="club_away" class="col-sm-2 col-form-label">Club Away</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" name="club_away" id="club_away">
+                                <option value="">- Pilih club -</option>
+                                <?php
+                                $sql3   = "select * from club where club.league_id='$fk'order by club_id desc";
+                                $q3     = mysqli_query($koneksi, $sql3);
+                                while ($r3 = mysqli_fetch_array($q3)) {
+                                    $ca         = $r3['club_name'];
+                                ?>
+                                <option value="<?php echo $ca ?>" <?php if ($ca == $ca) echo "selected" ?>><?php echo $ca ?></option>
+                                <?php
+                                }
+                                ?>
+                            </select>
+                        </div>
+                    </div>
                     <div class="mb-3 row">
                         <label for="score_club_home" class="col-sm-2 col-form-label">Score Club Home</label>
                         <div class="col-sm-10">
